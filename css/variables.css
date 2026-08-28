@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --surface-elevated: #1c1c1c;
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.65);
+  --text-faint: rgba(255, 255, 255, 0.4);
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: #7eb8ff;
+  --danger: #ff6b8a;
+  --favorite: #ff5a7a;
+  --radius-card: 24px;
+  --radius-chip: 999px;
+  --radius-sm: 12px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --header-h: 56px;
+  --nav-h: 64px;
+  --app-max: 430px;
+  --transition: 240ms ease;
+  --font: 'Nanum Brush Script', cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+[data-app-theme="light"] {
+  --bg: #f2f2f4;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --text: #111111;
+  --text-muted: rgba(0, 0, 0, 0.6);
+  --text-faint: rgba(0, 0, 0, 0.35);
+  --border: rgba(0, 0, 0, 0.1);
+  --accent: #2563eb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: 0ms;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

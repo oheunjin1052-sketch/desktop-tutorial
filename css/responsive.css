@@ -1,0 +1,48 @@
+/* Mobile first — base styles already mobile */
+
+@media (min-width: 768px) {
+  body {
+    background:
+      radial-gradient(ellipse at top, #1a1a22 0%, transparent 55%),
+      #050505;
+  }
+
+  .app-shell {
+    min-height: min(100dvh, 900px);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+  }
+
+  .quote-card {
+    max-height: 580px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-shell {
+    width: var(--app-max);
+  }
+
+  .quote-text {
+    font-size: clamp(28px, 3vw, 42px);
+  }
+}
+
+@media (max-width: 359px) {
+  .quote-card {
+    padding: 20px 18px 18px;
+  }
+
+  .quote-text {
+    font-size: clamp(22px, 7vw, 28px);
+  }
+
+  .quote-actions {
+    gap: 28px;
+  }
+}
+
